@@ -24,6 +24,6 @@ FriendList.propTypes = {
             id: PropTypes.number.isRequired,
         }),
     ),
-};
+}
 
 export default FriendList

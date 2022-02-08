@@ -1,0 +1,19 @@
+.statistics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid blanchedalmond;
+    width: 400px;
+}
+
+.title {
+    font-size: x-large;
+    color: black;
+    text-transform: uppercase;
+}
+
+.statlist {
+    display: flex;
+    flex-direction: row;
+
+}

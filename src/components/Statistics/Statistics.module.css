@@ -1,19 +1,47 @@
 .statistics {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    border: 1px solid blanchedalmond;
-    width: 400px;
+    text-align: center;
+    margin-bottom: 25px;
 }
 
 .title {
-    font-size: x-large;
-    color: black;
+    width: 350px;
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: rgba(73, 153, 77, 0.952);
     text-transform: uppercase;
 }
 
 .statlist {
+    width: 350px;
+    margin: 0;
     display: flex;
-    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    padding: 0;
+}
 
+.item {
+    width: calc(100% / 3);
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid grey
+}
+
+.label {
+    margin-bottom: 15px;
+}
+
+.percentage {
+    font-size: x-large;
 }

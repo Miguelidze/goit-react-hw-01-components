@@ -3,20 +3,23 @@ import styled from '../Statistics/Statistics.module.css';
 
 const Statistics = ({ title, stats }) => {
     return (
-        <section className={styled.statistics}>
-            <h2 className={styled.title}>{title}</h2>
+        <section>
+            <div className={styled.statistics}>
+                <h2 className={styled.title}>{title}</h2>
 
-            <ul className={styled.statlist}>
-                {stats.map(({ id, label, percentage }) => {
-                    return (
-                        <li className={styled.item} key={id}>
-                            <span className={styled.label}>{label}</span>
-                            <span className={styled.percentage}>{percentage}</span>
-                        </li>
-                    )
-                })}
-            </ul>
-        </section>
+                <ul className={styled.statlist}>
+                    {stats.map(({ id, label, percentage }) => {
+                        return (
+                            <li className={styled.item} key={id}>
+                                <span className={styled.label}>{label}</span>
+                                <span className={styled.percentage}>{percentage} %</span>
+                            </li>
+                        )
+                    })}
+                </ul>
+            </div>
+
+        </section >
     )
 }
 Statistics.propTypes = {

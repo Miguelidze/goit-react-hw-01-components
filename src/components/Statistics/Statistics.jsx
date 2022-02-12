@@ -5,7 +5,7 @@ const Statistics = ({ title, stats }) => {
     return (
         <section>
             <div className={styled.statistics}>
-                <h2 className={styled.title}>{title}</h2>
+                {title ? <h2 className={styled.title}>{title}</h2> : ''}
 
                 <ul className={styled.statlist}>
                     {stats.map(({ id, label, percentage }) => {
